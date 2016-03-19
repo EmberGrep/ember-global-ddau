@@ -7,7 +7,7 @@ export default Ember.Component.extend({
   submit(ev) {
     ev.preventDefault();
 
-    this.sendAction(`onsubmt`, this.getProperties(`name`));
+    this.sendAction(`onsubmit`, this.getProperties(`name`));
   }
 });
 // END-SNIPPET
