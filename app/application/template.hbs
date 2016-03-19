@@ -27,13 +27,17 @@
   </ul>
 </div>
 
-{{#each flashMessages.queue as |flash|}}
-  {{#flash-message flash=flash as |component flash|}}
-    {{#if flash.componentName}}
-      {{component flash.componentName content=flash.content}}
-    {{else}}
-      <h6>{{component.flashType}}</h6>
-      <p>{{flash.message}}</p>
-    {{/if}}
-  {{/flash-message}}
-{{/each}}
+<div class="alerts">
+  {{#each flashMessages.queue as |flash|}}
+    {{log flash.message.color}}
+    {{#flash-message flash=flash as |component flash|}}
+      <div class="alerts__box" style="background: {{flash.message.color}}">
+        {{#if flash.componentName}}
+          {{component flash.componentName content=flash.content}}
+        {{else}}
+          <p>{{flash.message.message}}</p>
+        {{/if}}
+      </div>
+    {{/flash-message}}
+  {{/each}}
+</div>

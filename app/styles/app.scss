@@ -68,3 +68,17 @@ $tiy-grey: #727d84;
 .code-example-title {
   font-family: $brand-mono;
 }
+
+.alerts {
+  position: fixed;
+  top: $gutter * 2;
+  right: $gutter;
+
+  &__box {
+    padding: $gutter / 2;
+  }
+
+  .alert + .alert {
+    margin-top: $gutter;
+  }
+}
