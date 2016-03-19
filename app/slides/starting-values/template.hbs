@@ -1,0 +1,30 @@
+<div class="slide__cover slide__cover--column">
+  <h2 class="slide__title">Set Starting Values</h2>
+  <div class="card-container">
+    <div class="card">
+{{! BEGIN-SNIPPET starting-values-template }}
+<h2>Model Name: {{model.name}}</h2>
+{{edit-slide-form onsubmit=(action "saveNewSlide") slide=model}}
+{{! END-SNIPPET }}
+    </div>
+
+    <div class="card">
+      <h4 class="code-example-title">components/edit-slide-form/template.hbs</h4>
+      {{code-snippet name="edit-slide-form-template.hbs"}}
+
+      <h4 class="code-example-title">components/edit-slide-form/component.js</h4>
+      {{code-snippet name="edit-slide-form-component.js"}}
+
+      <hr>
+
+      <h4 class="code-example-title">starting-values/route.js</h4>
+      {{code-snippet name="starting-values-route.js"}}
+
+      <h4 class="code-example-title">starting-values/controller.js</h4>
+      {{code-snippet name="starting-values-controller.js"}}
+
+      <h4 class="code-example-title">starting-values/template.hbs</h4>
+      {{code-snippet name="starting-values-template.hbs"}}
+    </div>
+  </div>
+</div>

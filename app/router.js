@@ -16,6 +16,7 @@ Router.map(function() {
     this.route('dedicated-component');
 
     this.route('first-edit');
+    this.route('starting-values');
   });
 });
 

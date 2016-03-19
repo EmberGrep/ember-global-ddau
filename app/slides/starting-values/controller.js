@@ -1,6 +1,6 @@
 import Ember from 'ember';
 
-// BEGIN-SNIPPET first-edit-controller
+// BEGIN-SNIPPET starting-values-controller
 export default Ember.Controller.extend({
   actions: {
     saveNewSlide(values) {

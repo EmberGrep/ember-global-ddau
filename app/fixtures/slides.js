@@ -36,5 +36,10 @@ export default [
     routeName: `first-edit`,
     color: `#5662d9`,
     name: `Edit`,
+  },
+  {
+    id: 8,
+    routeName: `starting-values`,
+    color: `#d956b0`,
   }
 ];

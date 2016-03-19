@@ -1,6 +1,6 @@
 import Ember from 'ember';
 
-// BEGIN-SNIPPET first-edit-route
+// BEGIN-SNIPPET starting-values-route
 export default Ember.Route.extend({
   model() {
     return this.store.findRecord(`slide`, 7);
