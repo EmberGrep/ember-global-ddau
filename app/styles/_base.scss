@@ -9,6 +9,14 @@ ul {
   padding: 0;
 }
 
+img {
+  min-width: 50%;
+}
+
+a {
+  color: $brand-primary;
+}
+
 .app {
   display: flex;
   flex-direction: column;
@@ -19,4 +27,8 @@ ul {
 .container {
   max-width: 65rem;
   margin: auto;
+}
+
+.mono {
+  font-family: $brand-mono;
 }

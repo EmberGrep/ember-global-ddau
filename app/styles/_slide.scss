@@ -10,6 +10,10 @@
     justify-content: center;
 
     flex-grow: 1;
+
+    &--tiy {
+      background: $tiy-grey;
+    }
   }
 
   &__title {

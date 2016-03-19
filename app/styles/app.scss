@@ -6,6 +6,7 @@ $brand-mono: 'Play', monospace;
 $brand-primary: #e1563f;
 $brand-grey: #3c3635;
 $brand-white: #efefef;
+$tiy-grey: #727d84;
 
 @import 'base';
 @import 'top-nav';
@@ -16,4 +17,8 @@ $brand-white: #efefef;
   font-size: 3rem;
 
   margin-top: 0;
+}
+
+.logo-img {
+  min-width: 20rem;
 }

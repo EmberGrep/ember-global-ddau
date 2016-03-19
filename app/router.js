@@ -7,6 +7,8 @@ const Router = Ember.Router.extend({
 
 Router.map(function() {
   this.route('intro', { path: `/` });
+  this.route('tiy');
+  this.route('ember-grep');
 });
 
 export default Router;

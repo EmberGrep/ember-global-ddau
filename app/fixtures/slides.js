@@ -6,12 +6,12 @@ export default [
   },
   {
     id: 2,
-    routeName: `work`,
+    routeName: `tiy`,
     color: `#ec9156`,
   },
   {
     id: 3,
-    routeName: `newForm`,
+    routeName: `ember-grep`,
     color:`#5662d9`,
   }
 ];

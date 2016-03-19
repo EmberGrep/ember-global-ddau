@@ -6,9 +6,15 @@
 
   &__item {
     margin: 0;
-    padding: ($gutter / 2) 0;
     color: $brand-white;
     flex-grow: 1;
     text-align: center;
+  }
+
+  &__link {
+    display: block;
+    padding: ($gutter / 2) 0;
+    color: inherit;
+    text-decoration: none;
   }
 }
