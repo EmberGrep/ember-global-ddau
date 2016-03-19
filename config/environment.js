@@ -13,6 +13,11 @@ module.exports = function(environment) {
       }
     },
 
+    git: {
+      repo: 'git@github.com:embergrep/ember-global-ddau.git',
+      branch: 'gh-pages',
+    },
+
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
@@ -52,7 +57,6 @@ module.exports = function(environment) {
   if (environment === 'production') {
     ENV.locationType = 'hash';
     ENV.baseURL = '/ember-global-ddau/';
-
   }
 
   return ENV;
