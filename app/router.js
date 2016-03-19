@@ -10,6 +10,7 @@ Router.map(function() {
     this.route('intro', { path: `/` });
     this.route('tiy');
     this.route('ember-grep');
+    this.route('ember-nashville');
 
     this.route('new-form');
     this.route('wait-to-save');
