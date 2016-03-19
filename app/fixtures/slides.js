@@ -75,4 +75,22 @@ export default [
     color: `#ec9156`,
     name: `Example`,
   },
+  {
+    id: 15,
+    routeName: `with-service`,
+    color: `#5662d9`,
+    name: `With Service`,
+  },
+  {
+    id: 16,
+    routeName: `with-service-example`,
+    color: `#d956b0`,
+    name: `Example`,
+  },
+  {
+    id: 17,
+    routeName: `close`,
+    color: `#76ab59`,
+    name: `Thanks`,
+  },
 ];
