@@ -1,0 +1,11 @@
+<button class="reset-btn" onclick={{route-action "resetSlides"}}>
+  Reset Slides
+</button>
+
+{{outlet}}
+
+<ul class="slides-list">
+  {{#each model as |slide|}}
+    <li>{{slide.routeName}}</li>
+  {{/each}}
+</ul>
