@@ -1,0 +1,14 @@
+.slides-list {
+  margin: 0;
+  display: flex;
+  font-weight: 700;
+  font-family: $brand-mono;
+
+  &__item {
+    margin: 0;
+    padding: ($gutter / 2) 0;
+    color: $brand-white;
+    flex-grow: 1;
+    text-align: center;
+  }
+}

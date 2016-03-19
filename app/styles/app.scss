@@ -4,25 +4,16 @@ $brand-sans: 'Open Sans', sans-serif;
 $brand-mono: 'Play', monospace;
 
 $brand-primary: #e1563f;
+$brand-grey: #3c3635;
 $brand-white: #efefef;
 
 @import 'base';
 @import 'top-nav';
+@import 'slide';
+@import 'slides-list';
 
-.slide {
-  flex-grow: 1;
-}
+.huge-text {
+  font-size: 3rem;
 
-.slides-list {
-  margin: 0;
-  display: flex;
-
-  &__item {
-    margin: 0;
-    padding: ($gutter / 2) 0;
-    color: $brand-white;
-    font-weight: 600;
-    flex-grow: 1;
-    text-align: center;
-  }
+  margin-top: 0;
 }
