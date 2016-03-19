@@ -1,11 +1,26 @@
-<button class="reset-btn" onclick={{route-action "resetSlides"}}>
-  Reset Slides
-</button>
+<div class="app">
+  <div class="top-nav">
+    <div class="container">
+      <nav class="top-nav__row">
+        <h1 class="top-nav__logo">>eg</h1>
+        <h2 class="top-nav__title">DDAU with simple-form</h2>
 
-{{outlet}}
+        <button class="top-nav__btn" onclick={{route-action "resetSlides"}}>
+          Reset Slides
+        </button>
+      </nav>
+    </div>
+  </div>
 
-<ul class="slides-list">
-  {{#each model as |slide|}}
-    <li>{{slide.routeName}}</li>
-  {{/each}}
-</ul>
+  <div class="slide">
+    {{outlet}}
+  </div>
+
+  <ul class="slides-list">
+    {{#each model as |slide|}}
+      <li class="slides-list__item" style="background: {{slide.color}}">
+        {{if slide.name slide.name slide.id}}
+      </li>
+    {{/each}}
+  </ul>
+</div>

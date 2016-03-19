@@ -1,7 +1,7 @@
 export default [
   {
     id: 1,
-    routeName: `introduction`,
+    routeName: `intro`,
     color: `#76ab59`,
   },
   {
