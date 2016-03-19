@@ -1,0 +1,22 @@
+<div class="slide__cover slide__cover--column">
+  <h2 class="slide__title">Ember With Service</h2>
+  <div class="card-container">
+    <div class="card">
+{{! BEGIN-SNIPPET with-service-template }}
+{{#with-service "flash-messages" as |notify|}}
+  <button class="big-btn" onclick={{action notify.success "That's all folks!"}}>
+    Click Me
+  </button>
+{{/with-service}}
+{{! END-SNIPPET }}
+    </div>
+
+    <div class="card">
+      <h4 class="code-example-title">with-service/controller.js</h4>
+      {{code-snippet name="with-service-controller.js"}}
+
+      <h4 class="code-example-title">with-service/template.hbs</h4>
+      {{code-snippet name="with-service-template.hbs"}}
+    </div>
+  </div>
+</div>
