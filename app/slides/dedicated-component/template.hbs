@@ -1,8 +1,9 @@
 <div class="slide__cover slide__cover--column">
-  <h2 class="slide__title">Basic New Model Form</h2>
+  <h2 class="slide__title">Create a Dedicated Slide Form Component</h2>
   <div class="card-container">
     <div class="card">
 {{! BEGIN-SNIPPET dedicated-component-template }}
+<h2>Model Name: {{model.name}}</h2>
 {{new-slide-form onsubmit=(action "saveNewSlide")}}
 {{! END-SNIPPET }}
     </div>

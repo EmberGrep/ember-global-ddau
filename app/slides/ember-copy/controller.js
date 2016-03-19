@@ -5,6 +5,7 @@ export default Ember.Controller.extend({
   actions: {
     saveNewSlide(values) {
       this.set(`model.name`, values.name);
+      this.set(`model.other`, values.other);
     },
   },
 });

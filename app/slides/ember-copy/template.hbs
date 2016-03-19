@@ -4,10 +4,16 @@
     <div class="card">
 {{! BEGIN-SNIPPET ember-copy-template }}
 <h2>Model Name: {{model.name}}</h2>
+<h2>Other Value: {{model.other}}</h2>
 {{#ember-copy-form onsubmit=(action "saveNewSlide") startingValues=model as |form|}}
   <div class="form-field">
     <label class="form-field__label">Slide Name</label>
     {{input class="form-field__input" placeholder="Slide Name" value=form.name}}
+  </div>
+
+  <div class="form-field">
+    <label class="form-field__label">Slide Other</label>
+    {{input class="form-field__input" placeholder="Slide Other" value=form.other}}
   </div>
 
   <button class="form-btn form-btn--submit">Save</button>

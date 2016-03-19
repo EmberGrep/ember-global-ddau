@@ -5,6 +5,7 @@ export default Ember.Route.extend({
   model() {
     return {
       name: `This is a POJO`,
+      other: `Two properties`,
     }
   }
 });
