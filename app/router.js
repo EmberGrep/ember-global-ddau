@@ -19,6 +19,7 @@ Router.map(function() {
     this.route('starting-values');
     this.route('composable-slide');
     this.route('ember-copy');
+    this.route('to-json');
   });
 });
 

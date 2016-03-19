@@ -52,4 +52,9 @@ export default [
     routeName: `ember-copy`,
     color: `#ec9156`,
   },
+  {
+    id: 11,
+    routeName: `to-json`,
+    color: `#5662d9`,
+  },
 ];

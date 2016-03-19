@@ -1,0 +1,39 @@
+<div class="slide__cover slide__cover--column">
+  <h2 class="slide__title">Using DS.Model.toJSON</h2>
+  <div class="card-container">
+    <div class="card">
+{{! BEGIN-SNIPPET to-json-template }}
+<h2>Model Name: {{model.name}}</h2>
+{{#to-json-form onsubmit=(action "saveNewSlide") startingValues=model as |form|}}
+  <div class="form-field">
+    <label class="form-field__label">Slide Name</label>
+    {{input class="form-field__input" placeholder="Slide Name" value=form.name}}
+  </div>
+
+  <button class="form-btn form-btn--submit">Save</button>
+{{/to-json-form}}
+{{! END-SNIPPET }}
+    </div>
+
+    <div class="card">
+      <h3>Immutable Model Copy... Ish...</h3>
+
+      <h4 class="code-example-title">components/to-json-form/template.hbs</h4>
+      {{code-snippet name="to-json-form-template.hbs"}}
+
+      <h4 class="code-example-title">components/to-json-form/component.js</h4>
+      {{code-snippet name="to-json-form-component.js"}}
+
+      <hr>
+
+      <h4 class="code-example-title">to-json/route.js</h4>
+      {{code-snippet name="to-json-route.js"}}
+
+      <h4 class="code-example-title">to-json/controller.js</h4>
+      {{code-snippet name="to-json-controller.js"}}
+
+      <h4 class="code-example-title">to-json/template.hbs</h4>
+      {{code-snippet name="to-json-template.hbs"}}
+    </div>
+  </div>
+</div>
