@@ -74,6 +74,10 @@ $tiy-grey: #727d84;
   top: $gutter * 2;
   right: $gutter;
 
+  .alert {
+    background: $brand-white;
+  }
+
   &__box {
     padding: $gutter / 2;
   }
