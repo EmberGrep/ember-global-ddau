@@ -23,5 +23,10 @@ export default [
     id: 5,
     routeName: `wait-to-save`,
     color: `#76ab59`,
+  },
+  {
+    id: 6,
+    routeName: `dedicated-component`,
+    color: `#ec9156`,
   }
 ];

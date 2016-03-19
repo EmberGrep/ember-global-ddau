@@ -12,6 +12,7 @@ Router.map(function() {
     this.route('ember-grep');
     this.route('new-form');
     this.route('wait-to-save');
+    this.route('dedicated-component');
   });
 });
 

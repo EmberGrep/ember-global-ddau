@@ -1,0 +1,31 @@
+<div class="slide__cover slide__cover--column">
+  <h2 class="slide__title">Basic New Model Form</h2>
+  <div class="card-container">
+    <div class="card">
+{{! BEGIN-SNIPPET dedicated-component-template }}
+{{new-slide-form onsubmit=(action "saveNewSlide")}}
+{{! END-SNIPPET }}
+    </div>
+
+    <div class="card">
+      <h3>Introduce a Component</h3>
+
+      <h4 class="code-example-title">components/new-slide-form/template.hbs</h4>
+      {{code-snippet name="new-slide-form-template.hbs"}}
+
+      <h4 class="code-example-title">components/new-slide-form/component.js</h4>
+      {{code-snippet name="new-slide-form-component.js"}}
+
+      <hr>
+
+      <h4 class="code-example-title">dedicated-component/route.js</h4>
+      {{code-snippet name="dedicated-component-route.js"}}
+
+      <h4 class="code-example-title">dedicated-component/controller.js</h4>
+      {{code-snippet name="dedicated-component-controller.js"}}
+
+      <h4 class="code-example-title">dedicated-component/template.hbs</h4>
+      {{code-snippet name="dedicated-component-template.hbs"}}
+    </div>
+  </div>
+</div>
