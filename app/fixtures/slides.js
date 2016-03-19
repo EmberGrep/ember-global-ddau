@@ -41,5 +41,10 @@ export default [
     id: 8,
     routeName: `starting-values`,
     color: `#d956b0`,
-  }
+  },
+  {
+    id: 9,
+    routeName: `composable-slide`,
+    color: `#76ab59`,
+  },
 ];

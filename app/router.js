@@ -17,6 +17,7 @@ Router.map(function() {
 
     this.route('first-edit');
     this.route('starting-values');
+    this.route('composable-slide');
   });
 });
 

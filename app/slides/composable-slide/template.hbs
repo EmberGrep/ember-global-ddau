@@ -1,0 +1,37 @@
+<div class="slide__cover slide__cover--column">
+  <h2 class="slide__title">Composable</h2>
+  <div class="card-container">
+    <div class="card">
+{{! BEGIN-SNIPPET composable-slide-template }}
+<h2>Model Name: {{model.name}}</h2>
+{{#composable-slide-form onsubmit=(action "saveNewSlide") slide=model as |form|}}
+  <div class="form-field">
+    <label class="form-field__label">Slide Name</label>
+    {{input class="form-field__input" placeholder="Slide Name" value=form.name}}
+  </div>
+
+  <button class="form-btn form-btn--submit">Save</button>
+{{/composable-slide-form}}
+{{! END-SNIPPET }}
+    </div>
+
+    <div class="card">
+      <h4 class="code-example-title">components/composable-slide-form/template.hbs</h4>
+      {{code-snippet name="composable-slide-form-template.hbs"}}
+
+      <h4 class="code-example-title">components/composable-slide-form/component.js</h4>
+      {{code-snippet name="composable-slide-form-component.js"}}
+
+      <hr>
+
+      <h4 class="code-example-title">composable-slide/template.hbs</h4>
+      {{code-snippet name="composable-slide-template.hbs"}}
+
+      <h4 class="code-example-title">composable-slide/route.js</h4>
+      {{code-snippet name="composable-slide-route.js"}}
+
+      <h4 class="code-example-title">composable-slide/controller.js</h4>
+      {{code-snippet name="composable-slide-controller.js"}}
+    </div>
+  </div>
+</div>
