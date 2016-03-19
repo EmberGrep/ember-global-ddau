@@ -4,6 +4,8 @@ import Ember from 'ember';
 export default Ember.Controller.extend({
   actions: {
     saveNewSlide(ev) {
+      ev.preventDefault();
+
       this.model.save();
     },
   },

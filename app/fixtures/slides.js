@@ -18,5 +18,10 @@ export default [
     id: 4,
     routeName: `new-form`,
     color:`#d956b0`,
+  },
+  {
+    id: 5,
+    routeName: `wait-to-save`,
+    color: `#76ab59`,
   }
 ];
