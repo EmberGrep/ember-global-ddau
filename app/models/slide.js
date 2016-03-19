@@ -4,4 +4,5 @@ export default DS.Model.extend({
   routeName: DS.attr(),
   color: DS.attr(),
   name: DS.attr(),
+  other: DS.attr(),
 });

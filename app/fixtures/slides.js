@@ -36,6 +36,7 @@ export default [
     routeName: `first-edit`,
     color: `#5662d9`,
     name: `Edit`,
+    other: `Hello Ember Global Meetup`,
   },
   {
     id: 8,
