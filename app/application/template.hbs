@@ -19,7 +19,7 @@
   <ul class="slides-list">
     {{#each model as |slide|}}
       <li class="slides-list__item" style="background: {{slide.color}}">
-        {{#link-to slide.routeName class="slides-list__link"}}
+        {{#link-to (slide-name slide.routeName) class="slides-list__link"}}
           {{if slide.name slide.name slide.id}}
         {{/link-to}}
       </li>

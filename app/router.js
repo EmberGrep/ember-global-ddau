@@ -6,11 +6,13 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.route('intro', { path: `/` });
-  this.route('tiy');
-  this.route('ember-grep');
-  this.route('new-form');
-  this.route('wait-to-save');
+  this.route('slides', { path: `/` }, function() {
+    this.route('intro', { path: `/` });
+    this.route('tiy');
+    this.route('ember-grep');
+    this.route('new-form');
+    this.route('wait-to-save');
+  });
 });
 
 export default Router;
