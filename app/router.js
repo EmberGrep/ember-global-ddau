@@ -20,6 +20,10 @@ Router.map(function() {
     this.route('composable-slide');
     this.route('ember-copy');
     this.route('to-json');
+
+    this.route('simple-form');
+    this.route('simple-form-credit');
+    this.route('simple-form-example');
   });
 });
 

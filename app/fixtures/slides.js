@@ -57,4 +57,21 @@ export default [
     routeName: `to-json`,
     color: `#5662d9`,
   },
+  {
+    id: 12,
+    routeName: `simple-form`,
+    color: `#d956b0`,
+    name: `Simple Form`,
+  },
+  {
+    id: 13,
+    routeName: `simple-form-credit`,
+    color: `#76ab59`,
+  },
+  {
+    id: 14,
+    routeName: `simple-form-example`,
+    color: `#ec9156`,
+    name: `Example`,
+  },
 ];
