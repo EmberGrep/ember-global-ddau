@@ -24,6 +24,7 @@ Router.map(function() {
     this.route('simple-form');
     this.route('simple-form-credit');
     this.route('simple-form-example');
+    this.route('simple-form-results');
 
     this.route('with-service');
     this.route('with-service-example');

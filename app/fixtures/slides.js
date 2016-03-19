@@ -77,20 +77,26 @@ export default [
   },
   {
     id: 15,
-    routeName: `with-service`,
+    routeName: `simple-form-results`,
     color: `#5662d9`,
-    name: `With Service`,
+    name: `Results`,
   },
   {
     id: 16,
-    routeName: `with-service-example`,
+    routeName: `with-service`,
     color: `#d956b0`,
-    name: `Example`,
+    name: `With Service`,
   },
   {
     id: 17,
-    routeName: `close`,
+    routeName: `with-service-example`,
     color: `#76ab59`,
+    name: `Example`,
+  },
+  {
+    id: 18,
+    routeName: `close`,
+    color: `#ec9156`,
     name: `Thanks`,
   },
 ];

@@ -86,3 +86,16 @@ $tiy-grey: #727d84;
     margin-top: $gutter;
   }
 }
+
+.flex-list {
+  font-size: 1.4rem;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: circle;
+  text-align: left;
+
+  li {
+    flex-shrink: 0;
+    min-width: calc(100% / 3);
+  }
+}
