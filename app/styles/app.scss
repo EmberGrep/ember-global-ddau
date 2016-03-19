@@ -6,6 +6,7 @@ $brand-mono: 'Play', monospace;
 $brand-primary: #e1563f;
 $brand-grey: #3c3635;
 $brand-white: #efefef;
+$brand-dark-grey: #444;
 $tiy-grey: #727d84;
 
 @import 'base';
@@ -21,4 +22,49 @@ $tiy-grey: #727d84;
 
 .logo-img {
   min-width: 20rem;
+}
+
+.card-container {
+  display: flex;
+  width: 100%;
+  max-width: 65rem + $gutter * 2;
+}
+
+.card {
+  flex-grow: 1;
+  max-height: 100%;
+  overflow: scroll;
+
+  margin: $gutter;
+  padding: $gutter / 2;
+  background: $brand-white;
+
+  color: $brand-dark-grey;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+
+  &__label {
+    font-size: 0.7rem;
+  }
+}
+
+.form-btn {
+  margin: ($gutter / 2) 0;
+  padding: $gutter / 4;
+  font-size: 1rem;
+  background: $brand-primary;
+  color: $brand-white;
+  border: 0;
+  border-radius: 0.3rem;
+
+  &--submit {
+    float: right;
+  }
+}
+
+.code-example-title {
+  font-family: $brand-mono;
 }

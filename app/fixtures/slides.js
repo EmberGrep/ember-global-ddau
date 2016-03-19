@@ -13,5 +13,10 @@ export default [
     id: 3,
     routeName: `ember-grep`,
     color:`#5662d9`,
+  },
+  {
+    id: 4,
+    routeName: `new-form`,
+    color:`#d956b0`,
   }
 ];

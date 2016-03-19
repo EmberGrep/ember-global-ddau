@@ -9,6 +9,7 @@ Router.map(function() {
   this.route('intro', { path: `/` });
   this.route('tiy');
   this.route('ember-grep');
+  this.route('new-form');
 });
 
 export default Router;

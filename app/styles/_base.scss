@@ -17,6 +17,14 @@ a {
   color: $brand-primary;
 }
 
+input {
+  font-size: 1rem;
+  border: 0;
+
+  background: none;
+  border-bottom: lighten($brand-grey, 50%) 0.1rem solid;
+}
+
 .app {
   display: flex;
   flex-direction: column;
