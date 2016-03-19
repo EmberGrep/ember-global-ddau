@@ -26,6 +26,10 @@ input {
   border-bottom: lighten($brand-grey, 50%) 0.1rem solid;
 }
 
+button {
+  outline: none;
+}
+
 .app {
   display: flex;
   flex-direction: column;

@@ -1,0 +1,37 @@
+<div class="slide__cover slide__cover--column">
+  <h2 class="slide__title">Composable</h2>
+  <div class="card-container">
+    <div class="card">
+{{! BEGIN-SNIPPET ember-copy-template }}
+<h2>Model Name: {{model.name}}</h2>
+{{#ember-copy-form onsubmit=(action "saveNewSlide") startingValues=model as |form|}}
+  <div class="form-field">
+    <label class="form-field__label">Slide Name</label>
+    {{input class="form-field__input" placeholder="Slide Name" value=form.name}}
+  </div>
+
+  <button class="form-btn form-btn--submit">Save</button>
+{{/ember-copy-form}}
+{{! END-SNIPPET }}
+    </div>
+
+    <div class="card">
+      <h4 class="code-example-title">components/ember-copy-form/template.hbs</h4>
+      {{code-snippet name="ember-copy-form-template.hbs"}}
+
+      <h4 class="code-example-title">components/ember-copy-form/component.js</h4>
+      {{code-snippet name="ember-copy-form-component.js"}}
+
+      <hr>
+
+      <h4 class="code-example-title">ember-copy/template.hbs</h4>
+      {{code-snippet name="ember-copy-template.hbs"}}
+
+      <h4 class="code-example-title">ember-copy/route.js</h4>
+      {{code-snippet name="ember-copy-route.js"}}
+
+      <h4 class="code-example-title">ember-copy/controller.js</h4>
+      {{code-snippet name="ember-copy-controller.js"}}
+    </div>
+  </div>
+</div>

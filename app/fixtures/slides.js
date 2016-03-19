@@ -47,4 +47,9 @@ export default [
     routeName: `composable-slide`,
     color: `#76ab59`,
   },
+  {
+    id: 10,
+    routeName: `ember-copy`,
+    color: `#ec9156`,
+  },
 ];
